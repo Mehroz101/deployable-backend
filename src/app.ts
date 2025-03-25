@@ -19,6 +19,6 @@ app.use("/api/auth", authRoutes);
 const PORT = Number(process.env.PORT) || 5000;
 app.get("/", (req :Request, res:Response) => {res.send("Hello from server")});
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on port ${PORT}`);
   });
